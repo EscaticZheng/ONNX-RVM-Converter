@@ -1,4 +1,4 @@
-# Opencv-Python-RVM Converter
+# ONNX-RVM-Converter
 Using cupy and onnx-runtime-gpu to boost the performance on **Robust Video Matting**[[link]](https://github.com/PeterL1n/RobustVideoMatting) for onnx.  
 On my *i7-9700k* and *RTX3060* win10 computer, two video matting only takes *40% cpu* and *60% gpu*.  
 **Time consuming**:~30S for converting a 30s video.
