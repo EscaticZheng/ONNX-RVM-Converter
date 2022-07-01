@@ -3,11 +3,11 @@ Using cupy and onnx-runtime-gpu to boost the performance on **Robust Video Matti
 On my *i7-9700k* and *RTX3060* win10 computer, two video matting only takes *40% cpu* and *60% gpu*.  
 **Time consuming**:~30S for converting a 30s video.
 # Requirements
-FFmpeg
-Opencv-python 
+FFmpeg  
+Opencv-python  
 Cuda and cudnn  
-Numpy and cupy(For windows, you need to install the visual studio first, then run or re-run the cuda installer) 
-Onnxruntime-gpu
+Numpy and cupy(For windows, you need to install the visual studio first, then run or re-run the cuda installer)  
+Onnxruntime-gpu  
 **Note**:The package version depends on your computer.
 # Usage
 1.Download my project zip or git clone.  
