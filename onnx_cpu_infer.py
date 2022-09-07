@@ -5,7 +5,7 @@ from tqdm import tqdm
 import openvino.utils as utils
 utils.add_openvino_libs_to_path()
 #load model
-sess = ort.InferenceSession('rvm_mobilenetv3_fp16.onnx',providers=['CPUExecutionProvider'],provider_options=[{'device_type' : 'AUTO:GPU,CPU'}])
+sess = ort.InferenceSession('rvm_mobilenetv3_fp16.onnx',providers=['CPUExecutionProvider'])
 
 #rec:rnn input，downsample_ratio:1280x720=0.375,1920x1080=0.25,4k=0.125
 rec = [ np.zeros([1, 1, 1, 1], dtype=np.float16) ] * 4  # Must match dtype of the model.
